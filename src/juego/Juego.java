@@ -5,8 +5,6 @@ package juego;
 //so it will use a physical attack,-7 means stat buff can't be used yet
 //*For User: 0 means no mana, -1 means stat buff used (or healing effect), -2 means stat buff can't be used but wastes a turn nonetheless,
 //-4 means wrong choice by user
-//
-//*I want interfaces for skill sets but I don't want to make the methods public, interfaces are on standby. 
 
 //Things to add later:
 //1. A back button when choosing to attack or use a skill
@@ -25,8 +23,8 @@ import Clases.Player;
 import Clases.Thief;
 import java.util.Scanner;
 import java.util.Random;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+//import java.util.regex.Matcher;
+//import java.util.regex.Pattern;
 
 public class Juego {
     
@@ -195,11 +193,11 @@ public class Juego {
                     Thread.sleep(650);
                 }else{
                     System.out.print(characters[j]);
-                    Thread.sleep(0); //If you want to get the typing effect, set it to 270, for no effect set it to 0. 
+                    Thread.sleep(270); //If you want to get the typing effect, set it to 270, for no effect set it to 0. 
                 }
             }
             System.out.print(" ►");
-            input.nextLine();                    
+            input.nextLine();      
         }
     }
     
